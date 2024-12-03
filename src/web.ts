@@ -7,4 +7,9 @@ export class NfcReaderWeb extends WebPlugin implements NfcReaderPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async testPluginMethod(options: { value: string }): Promise<{ value: string }> {
+    console.log('testPluginMethod', options);
+    return options;
+  }
 }
